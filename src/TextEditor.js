@@ -23,7 +23,7 @@ export default function TextEditor() {
   const [quill, setQuill] = useState()
 
   useEffect(() => {
-    const s = io("https://127.0.0.1:3001")
+    const s = io("https://backend-collaborative-editing-system.onrender.com/")
     setSocket(s)
 
     return () => {
